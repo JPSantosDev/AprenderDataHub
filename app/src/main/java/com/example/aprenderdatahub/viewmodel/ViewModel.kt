@@ -20,6 +20,7 @@ data class DataHubUiState(
     val query:String = ""
 
 ){
+
     val articlesFiltrados
         get() = if (query.isBlank()) articles
     else{
