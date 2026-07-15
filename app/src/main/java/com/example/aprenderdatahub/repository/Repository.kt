@@ -73,7 +73,7 @@ class Repository(val context: Context) {
         }
 
          suspend fun remoteArticles(): List<Article> = withContext(Dispatchers.IO) {
-            val url = ""
+            val url = "" // adicionar url
             val dtoList: List<ArticleDto> = client.get(url).body()
             dtoList.map { it.toArticle("Remoto") }
         }
