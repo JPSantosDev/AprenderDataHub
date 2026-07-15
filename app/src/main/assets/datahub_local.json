@@ -1,0 +1,20 @@
+[
+  {
+    "userId": 1,
+    "id": 101,
+    "title": "coroutines no android moderno",
+    "body": "Use coroutines para carregar dados sem bloquear a interface. Em prova, isso aparece em chamadas de API, leitura de JSON local e estados de carregamento."
+  },
+  {
+    "userId": 1,
+    "id": 102,
+    "title": "json local como fallback",
+    "body": "O JSON local garante que o aplicativo consiga apresentar dados mínimos mesmo quando a conexão falhar ou o endpoint estiver indisponível."
+  },
+  {
+    "userId": 2,
+    "id": 103,
+    "title": "repository simples e funcional",
+    "body": "Repository não precisa ser complexo. Nesta semana, ele apenas decide se carrega dados remotos ou locais e entrega uma lista pronta para a interface."
+  }
+]
