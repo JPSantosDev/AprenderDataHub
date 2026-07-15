@@ -19,7 +19,13 @@ data class DataHubUiState(
     val fallBack: Boolean = false,
     val query:String = ""
 
-)
+){
+    val articlesFiltrados
+        get() = if (query.isBlank()) articles
+    else{
+        articles.filter { it.title.contains(query,true) || it.summary.contains(query,true) }
+        }
+}
 
 
 
