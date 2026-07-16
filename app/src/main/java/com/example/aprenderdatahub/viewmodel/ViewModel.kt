@@ -17,7 +17,8 @@ data class DataHubUiState(
     val error: String? = null,
     val source: String = "",
     val fallBack: Boolean = false,
-    val query:String = ""
+    val query: String = "",
+    val isEmpty: Boolean = false
 
 ){
 
@@ -81,6 +82,15 @@ class DataHubViewModel(application: Application): AndroidViewModel(application){
         _uiState.update {
             it.copy(
                 query = text
+            )
+        }
+    }
+
+    fun simulateEmpty(){
+        _uiState.update {
+            it.copy(
+                isLoading = false,
+                isEmpty = true
             )
         }
     }
